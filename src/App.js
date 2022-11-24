@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+// import FunctionalComp from "./components/FunctionalComp";
+import FunctionalContextComp from "./components/FunctionalContextComp";
+// import ContextHook from "./components/ContextHook";
+// import { UseRefHook } from "./components/UseRefHook";
+// import UseMemoHook from "./components/UseMemoHook";
+import UseReducer from "./components/UseReducer";
 
+import "./App.css";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <UseReducer />
+
+      <FunctionalContextComp />
     </div>
   );
 }
